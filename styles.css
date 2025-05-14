@@ -1,3 +1,25 @@
+/* FONT DEFINED FOR SITE */
+h1, h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+    }
+
+    h3, h4 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    body {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+
+
+/* NAVIGATION AREA */
 nav{
     position: sticky;
     display: flex;
@@ -22,26 +44,46 @@ nav{
     color: white;
 }
 
+
+
+/* HERO-SECTION */
 .hero {
-    background-image: url("/images/pic\ 1.jpg");
-    height: 100vh;
+    background-image: url("./images/pic\ 1.jpg");
+    height: 96vh;
     background-size: cover, contain;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    /* COMMENTS */
+    /* the height was used to control the amount of space i want the hero section to cover on my screen */
+    /* Display flex was used tell css that i am getting ready to give it a direction, flex-driection: column; was used to tell it i want a vertical direction. align-item: center (will make item come to the middle) :end (will make it go to the far end (left)*/
+    /* */
 }
     
 .hero h1{
     font-family: poppins;
     font-size: 64pt;
     position: absolute;
-    left: 60%;
+    left: 50%;
     top: 20%;
-
+    line-height: 1.1;
+    /* COMMENTS */
+/* the line-height was used to either reduce or increase the spacing */
+/* the top was used to control the distance from the top to move the h1 */
+/* the left was used to adjust the distance from the left (positioning) */
 }
 .hero p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16pt;
     position: absolute;
-    left: 60%;
-    top: 20%;
+    left: 55.5%;
+    top: 63%;
+}
+
+
+/* BUTTONS */
+.buttons{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 75%;
+    left: 70;
 }
