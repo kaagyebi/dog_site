@@ -1,0 +1,7 @@
+#Landing Page Idea
+- Decided to go with a dog site for people who would want dog walking services
+
+#Navigation
+- I went with a simple nav bar
+- grouped the HOME, SERVICES, & TRAINERS together
+- Made CONTACTS stand alone
