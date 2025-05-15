@@ -1,4 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* FONT DEFINED FOR SITE */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 h1, h2 {
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
@@ -26,6 +33,8 @@ nav{
     top: 0;
     justify-content: space-around;
     background-color: #FF8C42;
+    padding: 10px;
+    font-family: 'poppins';
     
 }
 .navlinks {
@@ -41,7 +50,21 @@ nav{
 }
 
 .navlinks a{
+    text-decoration: none;
     color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.navlinks a:hover{ 
+ color: black;
+}
+
+.logo a{
+    text-decoration: none;
+    font-family: 'caveat';
+    font-size: 30pt;
+    font-weight: 900;
+    color: whitesmoke;
 }
 
 
@@ -49,7 +72,7 @@ nav{
 /* HERO-SECTION */
 .hero {
     background-image: url("./images/pic\ 1.jpg");
-    height: 96vh;
+    height: 90vh;
     background-size: cover, contain;
     display: flex;
     flex-direction: column;
@@ -66,7 +89,10 @@ nav{
     position: absolute;
     left: 50%;
     top: 20%;
+    margin-top: 80px;
     line-height: 1.1;
+    font-weight: 900;
+    /* text-shadow: -3px -3px 10px #fefefe,3px 3px 10px #00000026; */
     /* COMMENTS */
 /* the line-height was used to either reduce or increase the spacing */
 /* the top was used to control the distance from the top to move the h1 */
@@ -81,9 +107,52 @@ nav{
 
 /* BUTTONS */
 .buttons{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 75%;
-    left: 70;
+    margin-left: 50%;
+    margin-top:28%;
+    padding:20px;
+}
+.primary-button{
+    background-color: #FF8C42;
+    font-family: 'poppins'; 
+    font-weight: 700;
+    padding:20px;
+    margin:10px;
+    border:none;
+    border-radius: 25px;
+    /* box-shadow:-4px -4px 10px #E67A30, 6px 6px 10px #00000026;    /* basic syntax is  */
+    
+    /* offset x offset y blur-radius color. This is the analogy behind this, looking at a 
+    sunlight shining from the top-left.   */
+    text-transform: uppercase;
+}
+
+.primary-button:hover{
+    box-shadow: 2px 2px 2px #E67A30,-2px -2px 2px #00000026;
+}
+
+.secondary-button{
+    background-color: #5DA9E9;
+    font-family: 'poppins'; 
+    font-weight: 700;
+    padding:20px;
+    border:none;
+    border-radius: 25px;
+    /* box-shadow: -5px -5px 10px #fefefe, 5px 5px 10px #00000026; */
+    text-transform: uppercase;
+
+}
+.secondary-button:hover{
+    box-shadow: 2px 2px 2px #4A90D6, -2px -2px 2px #00000026;
+}
+
+/* SECOND SECTION */
+.sec-2{
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 40px;
+margin-top: 20px;
+}
+.sec2 .sec2-content{
+    ima
 }
