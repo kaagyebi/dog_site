@@ -78,7 +78,7 @@ nav {
 /* HERO-SECTION */
 .hero {
     background-image: url("./images/pic\ 1.jpg");
-    height: 90vh;
+    height: 100vh;
     background-size: cover, contain;
     display: flex;
     flex-direction: column;
