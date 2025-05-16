@@ -174,7 +174,7 @@ nav {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 .sec2-content img {
@@ -190,7 +190,10 @@ nav {
 
 .sec2-content p {
     text-align: center;
+    padding: 0;
 }
+
+
 
 /* THIRD SECTION */
 .sec3 {
