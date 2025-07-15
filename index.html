@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,174 +8,403 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Nunito+Sans:wght@400&family=Poppins:wght@500;600;700&display=swap');
     </style>
-
 </head>
-
 <body>
-    <nav>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <nav aria-label="Main navigation">
         <span class="logo">
-            <a href="#">DoggyWalker</a>
+            <a href="#" aria-label="DoggyWalker Home">DoggyWalker</a>
         </span>
-
-        <div class="navlinks">
+        <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-controls="navlinks" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navlinks" id="navlinks">
             <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Trainers</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <a href="#about">About</a>
+            <a href="#trainers">Trainers</a>
+            <a href="#services">Services</a>
+            <a href="#booking">Book</a>
+            <a href="#contact">Contact</a>
         </div>
-
     </nav>
-    <section class="hero">
-        <h1>WE'LL WALK YOUR DOGS FOR YOU</h1>
-
+    <header class="hero" role="banner">
+        <h1>We'll Walk Your Dogs For You</h1>
         <div class="buttons">
-            <button class="primary-button">WALK-DOG</button>
-            <button class="secondary-button">OUR TRAINERS</button>
+            <button class="primary-button">Book a Walk</button>
+            <button class="secondary-button">Meet Our Trainers</button>
         </div>
-    </section>
-
-    <section class="sec2-main">
-        <h1> Welcome To DoggyWalker</h1>
-        <h4>Premium Pet Services</h4>
-        <div class="sec2">
-            <div class="sec2-content">
-                <img src="./images/2149428989.jpg" alt="cute-shiba-inu-pet-with-family">
-                <h3>Dog Walking</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nisi rerum vitae quae iusto. Dolores
-                    vero veritatis illum tempora</p>
+    </header>
+    <main aria-label="Main content" id="main-content">
+        <section class="sec2-main" id="about">
+            <h1>Welcome to DoggyWalker</h1>
+            <h4>Premium Pet Services</h4>
+            <div class="sec2">
+                <div class="sec2-content">
+                    <img src="./images/2149428989.jpg" alt="Shiba Inu with family enjoying a walk">
+                    <h3>Dog Walking</h3>
+                    <p>Our professional dog walkers ensure your pet gets the exercise and attention they deserve, every single day.</p>
+                </div>
+                <div class="sec2-content">
+                    <img src="./images/2149658796.jpg" alt="Veterinarian taking care of a pet">
+                    <h3>Dog Sitting</h3>
+                    <p>Trust us to care for your dog while you're away. We provide a safe, loving environment for your furry friend.</p>
+                </div>
+                <div class="sec2-content">
+                    <img src="./images/2149901529.jpg" alt="Woman washing a happy dog">
+                    <h3>Overnight Care</h3>
+                    <p>Need to travel? Our overnight care ensures your dog is comfortable and happy, even when you're not home.</p>
+                </div>
             </div>
-            <div class="sec2-content">
-                <img src="./images/2149658796.jpg" alt="close-up-veterinarian-taking-care-pet">
-                <h3>Dog Sitting</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nisi rerum vitae quae iusto. Dolores
-                    vero veritatis illum tempora</p>
+        </section>
+        <section class="sec3-main" id="trainers">
+            <div class="sec3-intro">
+                <h2>Professional Coaches</h2>
+                <p><strong>Meet Ben, our lead trainer.</strong> At DoggyWalker, our certified trainers are experts in dog exercise, training, and care. We tailor our programs to every dog's needs and personality.</p>
+                <button class="primary-button">Choose Your Trainer</button>
             </div>
-            <div class="sec2-content">
-                <img src="./images/2149901529.jpg" alt="smiley-woman-washing-dog-full-shot">
-                <h3>Overnight Care</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nisi rerum vitae quae iusto. Dolores
-                    vero veritatis illum tempora</p>
+            <div class="sec3">
+                <div class="sec3-content">
+                    <img src="./images/trainer 1.jpg" alt="Dr. Ben Jum, lead dog trainer">
+                    <h3>Dr. Ben Jum</h3>
+                    <p>With over 10 years of experience, Dr. Ben specializes in positive reinforcement and canine fitness.</p>
+                </div>
+                <div class="sec3-content">
+                    <img src="./images/trainer 2.jpg" alt="John Doe, dog trainer">
+                    <h3>John Doe</h3>
+                    <p>John is passionate about helping dogs and owners build strong, healthy relationships through training.</p>
+                </div>
+                <div class="sec3-content">
+                    <img src="./images/Trainers.jpg" alt="Kate Bull, dog trainer">
+                    <h3>Kate Bull</h3>
+                    <p>Kate brings energy and compassion to every session, making training fun and effective for all breeds.</p>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section class="sec3-main">
-        <div class="sec3-intro">
-            <h2>PROFESSIONAL COACHES</h2>
-            <p><strong>My Name is Ben.</strong> I will introduce you to our dog walking business .</p>
-            <p>There's nothing better than having your very own DoggyWalker. Meet and train with your personal
-            trainers, who are certified experts in dog exercise physiology, anatomy, training program development,
-            exercise application, and fitness assessments. They work for you no matter your age or fitness
-            level.</p>
-            <button class="primary-button">CHOOSE YOUR TRAINER</button>
-        </div>
-
-        <section class="sec3">
-            <div class="sec3-content">
-
-
-
-                <div class="sec3">
-                    <div class="sec3-content">
-                        <img src="./images/trainer 1.jpg" alt="">
-                        <h3>Dr. Ben Jum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nisi rerum vitae quae iusto.
-                            Dolores
-                            vero veritatis illum tempora</p>
+        </section>
+        <!-- Trainer Profiles Section -->
+        <section class="trainer-profiles">
+            <h2>Meet Our Trainers</h2>
+            <div class="trainer-profiles-list">
+                <div class="trainer-profile-card">
+                    <img src="./images/trainer 1.jpg" alt="Dr. Ben Jum, lead dog trainer">
+                    <h3>Dr. Ben Jum</h3>
+                    <p><strong>Bio:</strong> Dr. Ben is a certified canine behaviorist and fitness expert with a PhD in Animal Science. He loves helping dogs reach their full potential through positive, science-based training.</p>
+                    <div class="trainer-reviews">
+                        <h4>Reviews</h4>
+                        <ul>
+                            <li>"Ben is amazing! My dog is happier and healthier than ever." – Sarah K.</li>
+                            <li>"Professional, patient, and truly cares about dogs." – Mike T.</li>
+                        </ul>
                     </div>
-                    <div class="sec3-content">
-                        <img src="./images/trainer 2.jpg" alt="">
-                        <h3>John Doime</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nisi rerum vitae quae iusto.
-                            Dolores
-                            vero veritatis illum tempora</p>
+                </div>
+                <div class="trainer-profile-card">
+                    <img src="./images/trainer 2.jpg" alt="John Doe, dog trainer">
+                    <h3>John Doe</h3>
+                    <p><strong>Bio:</strong> John specializes in obedience and agility training. He has a knack for building trust with even the most anxious pups and loves seeing their progress.</p>
+                    <div class="trainer-reviews">
+                        <h4>Reviews</h4>
+                        <ul>
+                            <li>"John helped my rescue dog gain confidence!" – Emily R.</li>
+                            <li>"Great with both dogs and people. Highly recommend." – Alex P.</li>
+                        </ul>
                     </div>
-                    <div class="sec3-content">
-                        <img src="./images/2149901529.jpg" alt="">
-                        <h3>Kate Bull </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nisi rerum vitae quae iusto.
-                            Dolores
-                            vero veritatis illum tempora</p>
+                </div>
+                <div class="trainer-profile-card">
+                    <img src="./images/Trainers.jpg" alt="Kate Bull, dog trainer">
+                    <h3>Kate Bull</h3>
+                    <p><strong>Bio:</strong> Kate is passionate about puppy socialization and advanced tricks. Her sessions are fun, energetic, and tailored to each dog's personality.</p>
+                    <div class="trainer-reviews">
+                        <h4>Reviews</h4>
+                        <ul>
+                            <li>"Kate made training fun for both me and my dog!" – Lisa M.</li>
+                            <li>"Creative, kind, and super knowledgeable." – Brian S.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
-    </section>
-
-    <section class="form-sec">
-        <h1>Get Started Here</h1>
-        <!-- <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quasi, provident fuga explicabo nihil sit neque! Adipisci, vero natus. Sunt nobis dolor libero accusantium officiis, qui quas! Nisi, velit tempore!</p> -->
-
-        <div class="form-box">
-            <form action="" class="form">
-                <label for="name">Full Name</label>
-                <input type="text" name="" id="">
-                <label for="email">Email Address</label>
-                <input type="text" name="" id="">
-                <label for="number">Phone Number</label>
-                <input type="text" name="" id="">
-                <label for="questions">Questions/Comments</label>
-                <textarea name="questions" id="questions">Comment Here</textarea>
-                <button class="secondary-button">SEND</button>
+        <!-- Photo Gallery & Social Feed Section -->
+        <section class="gallery-social">
+            <h2>Our Happy Dogs & Walks</h2>
+            <div class="gallery-grid">
+                <img src="./images/2149428989.jpg" alt="Shiba Inu with family on a walk">
+                <img src="./images/2149658796.jpg" alt="Veterinarian caring for a dog">
+                <img src="./images/2149901529.jpg" alt="Woman washing a happy dog">
+                <img src="./images/27259.jpg" alt="Dog enjoying the outdoors">
+                <img src="./images/pic 1.jpg" alt="DoggyWalker hero dog">
+                <img src="./images/Trainers.jpg" alt="Our trainers with dogs">
+            </div>
+            <div class="social-feed">
+                <h3>Follow Us on Instagram</h3>
+                <div class="social-placeholder">
+                    <p>See more adorable moments and updates on our <a href="#" target="_blank">Instagram</a>!</p>
+                    <!-- Replace # with your real Instagram link -->
+                </div>
+            </div>
+        </section>
+        <!-- Blog/Resources Section -->
+        <section class="blog-resources">
+            <h2>Dog Care Tips & Resources</h2>
+            <div class="blog-list">
+                <article class="blog-post">
+                    <h3>5 Benefits of Daily Dog Walks</h3>
+                    <div class="blog-meta">April 2024</div>
+                    <p>Discover why regular walks are essential for your dog's health, happiness, and behavior. Plus, tips for making walks more fun for both of you!</p>
+                    <a href="#" class="blog-link">Read More</a>
+                </article>
+                <article class="blog-post">
+                    <h3>How to Choose the Right Leash & Harness</h3>
+                    <div class="blog-meta">March 2024</div>
+                    <p>Confused by all the options? Learn how to pick the best leash and harness for your dog's size, breed, and walking style.</p>
+                    <a href="#" class="blog-link">Read More</a>
+                </article>
+                <article class="blog-post">
+                    <h3>Understanding Your Dog's Body Language</h3>
+                    <div class="blog-meta">February 2024</div>
+                    <p>Decode your dog's signals to improve communication, prevent problems, and strengthen your bond during walks and playtime.</p>
+                    <a href="#" class="blog-link">Read More</a>
+                </article>
+            </div>
+        </section>
+        <!-- Pricing & Packages Section -->
+        <section class="pricing-section" id="pricing">
+            <h2>Our Packages & Pricing</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Standard Walk</h3>
+                    <div class="price">$20 <span>/ walk</span></div>
+                    <ul>
+                        <li>30-minute walk</li>
+                        <li>Experienced walker</li>
+                        <li>Photo & update after walk</li>
+                        <li>Flexible scheduling</li>
+                    </ul>
+                    <button class="primary-button">Book Standard Walk</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Puppy Visit</h3>
+                    <div class="price">$25 <span>/ visit</span></div>
+                    <ul>
+                        <li>30-minute play & potty break</li>
+                        <li>Puppy socialization</li>
+                        <li>Feeding & water refresh</li>
+                        <li>Photo & update</li>
+                    </ul>
+                    <button class="primary-button">Book Puppy Visit</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Overnight Care</h3>
+                    <div class="price">$60 <span>/ night</span></div>
+                    <ul>
+                        <li>Stay in your home</li>
+                        <li>Evening & morning walks</li>
+                        <li>Feeding & medication</li>
+                        <li>Daily updates</li>
+                    </ul>
+                    <button class="primary-button">Book Overnight Care</button>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials Carousel Section -->
+        <section class="testimonials-section">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-carousel">
+                <button class="carousel-arrow" id="testimonial-prev" aria-label="Previous testimonial">&#8592;</button>
+                <div class="testimonial-slide" id="testimonial-slide">
+                    <blockquote>
+                        <p>"DoggyWalker is the best! My dog looks forward to every walk and comes home happy and tired. Highly recommend!"</p>
+                        <footer>- Sarah K.</footer>
+                    </blockquote>
+                </div>
+                <button class="carousel-arrow" id="testimonial-next" aria-label="Next testimonial">&#8594;</button>
+            </div>
+        </section>
+        <!-- Newsletter Signup Section -->
+        <section class="newsletter-section">
+            <h2>Stay in the Loop!</h2>
+            <p>Subscribe to our newsletter for dog care tips, special offers, and the latest DoggyWalker news.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); document.getElementById('newsletter-confirm').style.display='block'; this.reset();" aria-label="Newsletter signup form">
+                <input type="email" name="newsletter-email" placeholder="Your email address" required>
+                <button type="submit" class="primary-button">Subscribe</button>
             </form>
+            <div id="newsletter-confirm" style="display:none; color:green; font-weight:bold;" role="status" aria-live="polite">Thank you for subscribing!</div>
+        </section>
+        <section class="booking-sec" id="booking">
+            <h1>Book a Service</h1>
+            <div class="booking-box">
+                <form class="booking-form" onsubmit="event.preventDefault(); document.getElementById('booking-confirm').style.display='block'; this.reset();" aria-label="Booking form">
+                    <label for="booking-name">Full Name</label>
+                    <input type="text" id="booking-name" name="booking-name" required>
+                    <label for="booking-email">Email Address</label>
+                    <input type="email" id="booking-email" name="booking-email" required>
+                    <label for="booking-service">Service</label>
+                    <select id="booking-service" name="booking-service" required>
+                        <option value="">Select a service</option>
+                        <option value="Dog Walking">Dog Walking</option>
+                        <option value="Dog Sitting">Dog Sitting</option>
+                        <option value="Overnight Care">Overnight Care</option>
+                        <option value="Puppy Visits">Puppy Visits</option>
+                    </select>
+                    <label for="booking-date">Date</label>
+                    <input type="date" id="booking-date" name="booking-date" required>
+                    <label for="booking-time">Time</label>
+                    <input type="time" id="booking-time" name="booking-time" required>
+                    <button class="primary-button" type="submit">Book Now</button>
+                </form>
+                <div id="booking-confirm" style="display:none; margin-top:1rem; color:green; font-weight:bold;" role="status" aria-live="polite">Thank you! Your booking has been received.</div>
+            </div>
+        </section>
+        <section class="form-sec" id="contact" aria-label="Contact form">
+            <h1>Get Started</h1>
+            <div class="form-box">
+                <form class="form" autocomplete="on" aria-label="Get started form">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="number">Phone Number</label>
+                    <input type="tel" id="number" name="number" pattern="[0-9\-\+\s]+" required>
+                    <label for="questions">Questions/Comments</label>
+                    <textarea id="questions" name="questions" placeholder="Comment here..."></textarea>
+                    <button class="secondary-button" type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-main">
+        <div class="footer-sec">
+            <div class="footer-column">
+                <h2>DoggyWalker</h2>
+                <p>Premium pet care services since 2024.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#trainers">Trainers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li>Dog Walking</li>
+                    <li>Pet Sitting</li>
+                    <li>Overnight Care</li>
+                    <li>Puppy Visits</li>
+                    <li>Emergency Services</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>123 Dog Lane, Barkville</li>
+                    <li>Phone: (555) 123-4567</li>
+                    <li>Email: info@doggywalker.com</li>
+                </ul>
+                <button class="footer-button">Book Now</button>
+            </div>
         </div>
-
-    </section>
-
-
-    </form>
-
-    <footer>
-        <footer class="footer-main">
-            <div class="footer-sec">
-
-                <div class="footer-column">
-                    <h2>DoggyWalker</h2>
-                    <p>Premium pet care services since 2024.</p>
-                </div>
-
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Trainers</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>Services</h4>
-                    <ul>
-                        <li>Dog Walking</li>
-                        <li>Pet Sitting</li>
-                        <li>Overnight Care</li>
-                        <li>Puppy Visits</li>
-                        <li>Emergency Services</li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>Contact Us</h4>
-
-                    <ul>
-                        <li>Contact Us</li>
-                        <li>123 Dog Lane, Barkville</li>
-                        <li>Phone: (555) 123-4567</li>
-                        <li>Email: info@doggiewalker.com</li>
-
-                    </ul>
-                    <button class="footer-button">Book Now</button>
-                </div>
-            </div>
-
-            <div class="footer2">
-                <p>&copy; 2024 DoggyWalker. All rights reserved.</p>
-            </div>
-        </footer>
+        <div class="footer2">
+            <p>&copy; 2024 DoggyWalker. All rights reserved.</p>
+        </div>
     </footer>
+<!-- Live Chat Widget (front-end only) -->
+<div id="live-chat-widget">
+    <button id="chat-open-btn" aria-label="Open live chat">💬 Contact Us</button>
+    <div id="chat-window" style="display:none;">
+        <div class="chat-header">
+            <span>Contact Us</span>
+            <button id="chat-close-btn" aria-label="Close chat">&times;</button>
+        </div>
+        <form id="chat-form" onsubmit="event.preventDefault(); document.getElementById('chat-confirm').style.display='block'; this.reset();" aria-label="Live chat form">
+            <label for="chat-name">Name</label>
+            <input type="text" id="chat-name" name="chat-name" required>
+            <label for="chat-email">Email</label>
+            <input type="email" id="chat-email" name="chat-email" required>
+            <label for="chat-message">Message</label>
+            <textarea id="chat-message" name="chat-message" required></textarea>
+            <button type="submit" class="primary-button">Send</button>
+        </form>
+        <div id="chat-confirm" style="display:none; color:green; font-weight:bold;" role="status" aria-live="polite">Thank you! We'll get back to you soon.</div>
+    </div>
+</div>
+<script>
+    // Live chat widget toggle logic
+    const chatOpenBtn = document.getElementById('chat-open-btn');
+    const chatWindow = document.getElementById('chat-window');
+    const chatCloseBtn = document.getElementById('chat-close-btn');
+    chatOpenBtn.onclick = () => { chatWindow.style.display = 'block'; chatOpenBtn.style.display = 'none'; };
+    chatCloseBtn.onclick = () => { chatWindow.style.display = 'none'; chatOpenBtn.style.display = 'block'; document.getElementById('chat-confirm').style.display = 'none'; };
+</script>
+<script>
+// Testimonials carousel logic
+const testimonials = [
+    {
+        text: '"DoggyWalker is the best! My dog looks forward to every walk and comes home happy and tired. Highly recommend!"',
+        author: '- Sarah K.'
+    },
+    {
+        text: '"The trainers are so knowledgeable and caring. My puppy learned so much and had a blast!"',
+        author: '- Emily R.'
+    },
+    {
+        text: '"Reliable, friendly, and always on time. I trust DoggyWalker with all my pets!"',
+        author: '- Mike T.'
+    }
+];
+let testimonialIndex = 0;
+const slide = document.getElementById('testimonial-slide');
+const prevBtn = document.getElementById('testimonial-prev');
+const nextBtn = document.getElementById('testimonial-next');
+function showTestimonial(idx) {
+    slide.innerHTML = `<blockquote><p>${testimonials[idx].text}</p><footer>${testimonials[idx].author}</footer></blockquote>`;
+}
+prevBtn.onclick = () => {
+    testimonialIndex = (testimonialIndex - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(testimonialIndex);
+};
+nextBtn.onclick = () => {
+    testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+    showTestimonial(testimonialIndex);
+};
+// Initialize
+showTestimonial(testimonialIndex);
+</script>
+<!-- High Contrast Mode Toggle (floating button) -->
+<button id="contrast-toggle" aria-label="Toggle high contrast mode" tabindex="0">🌓 Contrast</button>
+<script>
+// High contrast mode toggle logic
+const contrastBtn = document.getElementById('contrast-toggle');
+contrastBtn.onclick = () => {
+    document.body.classList.toggle('high-contrast');
+    contrastBtn.setAttribute('aria-pressed', document.body.classList.contains('high-contrast'));
+};
+contrastBtn.onkeydown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        contrastBtn.click();
+    }
+};
+</script>
+<script>
+// Hamburger menu toggle
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const navlinks = document.getElementById('navlinks');
+hamburgerBtn.onclick = function() {
+    navlinks.classList.toggle('open');
+    const expanded = navlinks.classList.contains('open');
+    hamburgerBtn.setAttribute('aria-expanded', expanded);
+};
+hamburgerBtn.onkeydown = function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        hamburgerBtn.click();
+    }
+};
+</script>
 </body>
-
 </html>
